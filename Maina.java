@@ -39,7 +39,8 @@ public class Maina {
             System.out.println("Menu di accesso:");
             System.out.println("1. Accedi come Utente");
             System.out.println("2. Esci");
-
+            
+            System.out.println("Inserisci la tua scelta");
             int scelta = mioc.nextInt();
 
             if (scelta == 1) {
@@ -49,6 +50,7 @@ public class Maina {
                 String password = mioc.next();
 
                 boolean accessoConsentito = false;
+
                 for (Utente u : utenti) {
                     if (u.username.equals(nomeUtente) && u.password.equals(password)) {
                         accessoConsentito = true;
@@ -61,6 +63,8 @@ public class Maina {
                         System.out.println("\nMenu Utente:");
                         System.out.println("1. Visualizza Prodotti");
                         System.out.println("2. Esci");
+
+                        System.out.println("Inserisci la tua scelta");
                         int sceltaUtente = mioc.nextInt();
 
                         if (sceltaUtente == 1) {
